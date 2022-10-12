@@ -1,0 +1,20 @@
+{
+    "articulos":[
+                {
+                    "nombre":"Audifonos",
+                    "precio":20000,
+                    "cantidad":12
+                },
+                {
+                    "nombre":"TV",
+                    "precio":2000000,
+                    "cantidad":3
+                },
+                {
+                    "nombre":"PC",
+                    "precio":1200000,
+                    "cantidad":9  
+                }
+                ],
+    "NombreTienda":"Tienda Virtual"
+}

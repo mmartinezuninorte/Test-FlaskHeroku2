@@ -1,0 +1,29 @@
+{% extends './layout.html' %}
+{%block body%}
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.nombre.label }}<br>
+            {{ form.nombre()}} <br>
+        </p>
+        <p>
+            {{ form.correo.label }}<br>
+            {{ form.correo()}} <br>
+        </p>
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username()}} <br>
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password()}} <br>
+        </p>
+        <p>
+            {{ form.password2.label }}<br>
+            {{ form.password2()}} <br>
+        </p>
+        <p>
+            {{form.enviar}}
+        </p>
+    </form>
+{%endblock%}

@@ -1,0 +1,19 @@
+{% extends './layout.html' %}
+{%block body%}
+<h1>Login!</h1>
+<h2>Inicie sesion!</h2>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.correo.label }}<br>
+            {{ form.correo()}} <br>
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password()}} <br>
+        </p>
+        <p>
+            {{form.enviar}}
+        </p>
+    </form>
+{%endblock%}

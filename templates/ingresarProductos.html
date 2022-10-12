@@ -1,0 +1,25 @@
+{% extends './layout.html' %}
+{%block body%}
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.nombre.label }}<br>
+            {{ form.nombre()}} <br>
+        </p>
+        <p>
+            {{ form.codigoVenta.label }}<br>
+            {{ form.codigoVenta()}} <br>
+        </p>
+        <p>
+            {{ form.valor.label }}<br>
+            {{ form.valor()}} <br>
+        </p>
+        <p>
+            {{ form.cantidad.label }}<br>
+            {{ form.cantidad()}} <br>
+        </p>
+        <p>
+            {{form.enviar}}
+        </p>
+    </form>
+{%endblock%}
